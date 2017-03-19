@@ -60,4 +60,3 @@ if ($url == '/') {
 
 
 }
-//die("404 not found");
