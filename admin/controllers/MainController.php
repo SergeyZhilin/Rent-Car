@@ -1,6 +1,6 @@
 <?php
 
-namespace controllers;
+namespace admin\controllers;
 
 use models\Auto;
 use models\Color;
@@ -12,7 +12,7 @@ class MainController
 {
     public function indexAction()
     {
-        require('/index.html');
+        require('../index.html');
     }
 
     public function createAction()
@@ -98,6 +98,6 @@ class MainController
     public function adminAction()
     {
         $autos = Auto::getAll();
-        require ('views/admin.php');
+        require ('/views/admin.php');
     }
 }
