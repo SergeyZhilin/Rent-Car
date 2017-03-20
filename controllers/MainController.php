@@ -14,7 +14,7 @@ class MainController
     {
         $autos = Auto::getAll();
 
-        require('template/index.html');
+        require('/template/index.html');
     }
 
     public function createAction()
