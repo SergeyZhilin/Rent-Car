@@ -23,7 +23,7 @@ if (false !== $pos = strpos($url, '?')) {
 
 // is Main Page
 if ($url == '/') {
-    $controller = new admin\controllers\MainController();
+    $controller = new controllers\MainController();
     $controller->indexAction();
 } else {
 

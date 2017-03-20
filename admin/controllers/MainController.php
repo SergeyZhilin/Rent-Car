@@ -1,6 +1,6 @@
 <?php
 
-namespace admin\controllers;
+namespace controllers;
 
 use models\Auto;
 use models\Color;
@@ -12,7 +12,7 @@ class MainController
 {
     public function indexAction()
     {
-        require('../index.html');
+        require('/index.html');
     }
 
     public function createAction()
