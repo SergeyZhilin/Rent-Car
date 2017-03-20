@@ -12,9 +12,7 @@ class MainController
 {
     public function indexAction()
     {
-        $autos = Auto::getAll();
-
-        require('/template/index.html');
+        require('/index.html');
     }
 
     public function createAction()
@@ -82,7 +80,7 @@ class MainController
         if ($needUpdate) {
             $model->save();
 
-            header('Location: /main/index', true, 302);
+            header('Location: /main/admin', true, 302);
         }
     }
     public function deleteAction()
@@ -95,6 +93,11 @@ class MainController
 
         $auto->delete();
 
-        header('Location: /main/index', true, 302);
+        header('Location: /main/admin', true, 302);
+    }
+    public function adminAction()
+    {
+        $autos = Auto::getAll();
+        require ('views/admin.php');
     }
 }

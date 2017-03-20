@@ -18,7 +18,7 @@
 
 <div class="container bg-primary" style="padding-top: 20px; padding-bottom: 20px;">
 
-    <a href="/" class="btn btn-info pull-right" role="button">Back</a>
+    <a href="/main/admin" class="btn btn-info pull-right" role="button">Back</a>
 
     <h3>Create</h3>
 
