@@ -14,7 +14,7 @@ class MainController
     {
         $autos = Auto::getAll();
 
-        require('views/index.php');
+        require('views/Rentmain/index.html');
     }
 
     public function createAction()
